@@ -1,14 +1,18 @@
+name: 15-oct
 trigger:
 - main
+- features/*
 
 pool:
   name: dev_pravin
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+stages:
+  - stage: scan
+    jobs:
+     - job: scaning
+       steps:
+       - task: tfsec@1
+         inputs:
+           version: 'v1.26.0'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+
