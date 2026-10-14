@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  pool: dev_pravin
+  name: dev_pravin
 
 steps:
 - script: echo Hello, world!
