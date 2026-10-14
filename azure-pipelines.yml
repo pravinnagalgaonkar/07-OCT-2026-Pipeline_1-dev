@@ -14,9 +14,6 @@ stages:
        - task: tfsec@1
          inputs:
            version: 'v1.26.0'
-       - task: InfracostSetup@2
-         inputs:
-           apiKey: 'ico-7ExBFh5jK4Wb9vQMSavRfrOCid5C7zRJ'
-           version: '0.10.x'
+
 
 
