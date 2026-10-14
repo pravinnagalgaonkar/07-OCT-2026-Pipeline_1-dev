@@ -15,5 +15,15 @@ stages:
          inputs:
            version: 'v1.26.0'
 
+  - stage: terraforminitvalidate
+    jobs:
+     - job: terraformintivalidate
+       steps:
+       - task: TerraformTool@0
+         inputs:
+           version: '0.11.8'
+      
+
+
 
 
